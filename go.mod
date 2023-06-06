@@ -1,4 +1,4 @@
-module github.com/yl2chen/cidranger
+module github.com/egorgasay/cidranger
 
 go 1.18
 
