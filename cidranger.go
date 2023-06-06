@@ -99,5 +99,5 @@ func NewPCTrieRanger[V any](defaultValue ...V) Ranger[V] {
 	if len(defaultValue) > 0 {
 		val = defaultValue[0]
 	}
-	return newVersionedRanger[V](newPrefixTree[V], val)
+	return NewVersionedRanger[V](newPrefixTree[V], val)
 }

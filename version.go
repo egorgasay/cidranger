@@ -13,7 +13,7 @@ type versionedRanger[V any] struct {
 	ipV6Ranger Ranger[V]
 }
 
-func newVersionedRanger[V any](factory rangerFactory[V], defaultValue V) Ranger[V] {
+func NewVersionedRanger[V any](factory rangerFactory[V], defaultValue V) Ranger[V] {
 	return &versionedRanger[V]{
 		ipV4Ranger: factory(rnet.IPv4, defaultValue),
 		ipV6Ranger: factory(rnet.IPv6, defaultValue),

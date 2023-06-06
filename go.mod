@@ -2,7 +2,10 @@ module github.com/egorgasay/cidranger
 
 go 1.18
 
-require github.com/stretchr/testify v1.6.1
+require (
+	github.com/stretchr/testify v1.6.1
+	github.com/yl2chen/cidranger v1.0.2
+)
 
 require (
 	github.com/davecgh/go-spew v1.1.0 // indirect
